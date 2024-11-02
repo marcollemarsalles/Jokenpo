@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 vEscolhaBot.equals("tesoura") && escolhaUsuario.equals("papel")) {
 
             executarSomDerrota(vTextoResultado);
-            vTextoResultado.setText("Você perdeu !!! Tente novamente :(");
+            vTextoResultado.setText("Você perdeu! Tente novamente :(");
             vImagemResultado.setImageResource(R.mipmap.derrota);
             vDerrotas++;
             vDerrotasStr = Integer.toString(vDerrotas);
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 escolhaUsuario.equals("tesoura") && vEscolhaBot.equals("papel")) {
 
             executarSomVitoria(vTextoResultado);
-            vTextoResultado.setText("Parabéns !!! Você ganhou :)");
+            vTextoResultado.setText("Parabéns! Você ganhou :)");
             vImagemResultado.setImageResource(R.mipmap.vitoria);
             vVitorias++;
             vVitorasStr = Integer.toString(vVitorias);
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             executarSomEmpate(vTextoResultado);
-            vTextoResultado.setText("Empate !!! Tente novamente :P");
+            vTextoResultado.setText("Empate! Tente novamente :P");
             vImagemResultado.setImageResource(R.mipmap.empate);
             vEmpates++;
             vEmpatesStr = Integer.toString(vEmpates);
